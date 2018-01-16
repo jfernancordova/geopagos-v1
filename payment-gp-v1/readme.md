@@ -16,3 +16,7 @@ Las clases deben contar con todas las validaciones mencionadas, de manera que un
 programador que no tenga acceso a la documentación igualmente pueda instanciar y utilizar los
 objetos de estas clases correctamente
 Se valorará si se implementa interfaz de usuario.
+
+## Docker
+
+- docker-compose up -d
