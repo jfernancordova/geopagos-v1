@@ -15,3 +15,9 @@ característica.
 Se debe entregar el código que resuelva el ejercicio. Y en caso de conocer su notación se valorara
 el diseño de su diagrama UML.
 
+## Docker
+
+- docker build -t figures .
+- docker run --rm --name figures figures php doFigures.php
+
+
