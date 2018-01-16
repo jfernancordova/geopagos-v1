@@ -13,6 +13,8 @@ class Payment extends Model
      */
     protected $table = 'payments';
 
+    public $timestamps = false;
+
     protected $primaryKey = 'payment_code';
 
     /**
@@ -22,6 +24,15 @@ class Payment extends Model
      */
     protected $fillable = [
         'payment_code', 'imported', 'date'
+    ];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'created_at', 'updated_at'
     ];
 
     /**

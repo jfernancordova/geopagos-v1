@@ -1,6 +1,10 @@
-<?php require_once("Autoloader.php");
+<?php require_once'figures/vendor/autoload.php';
+
 header('Content-Type: application/json');
 header('Access-Control-Allow-Origin: *');
+
+use jfernancordova\Figures\FigureFactory;
+use jfernancordova\Figures\Helpers\ApiResponse;
 
 $figures = [
     FigureFactory::createFigure('Circle', ['diameter' => 5]),
@@ -19,7 +23,7 @@ $all = array_map(function($figures)
 
 }, $figures);
 
-die(\Helpers\ApiResponse::Response(1,\Helpers\ApiResponse::SUCCESS, $all));
+die(ApiResponse::Response(1,ApiResponse::SUCCESS, $all));
 
 
 

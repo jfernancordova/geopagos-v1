@@ -1,22 +1,25 @@
 <?php
 
-namespace Figures;
+namespace jfernancordova\Figures\Figures;
 
 /**
  * Class Triangle
- * @package GeoPagos
+ * @package Figures
  */
-class Square extends Figure
-{
-    protected $side;
+class Triangle extends Figure {
+
+    protected $base;
+    protected $height;
 
     /**
      * Triangle constructor.
-     * @param $side
+     * @param $base
+     * @param $height
      */
-    public function __construct($side)
+    public function __construct($base, $height)
     {
-        $this->side = $side;
+        $this->base   = $base;
+        $this->height = $height;
     }
 
     /**
@@ -25,7 +28,8 @@ class Square extends Figure
     public function base()
     {
         parent::base();
-        return $this->side;
+        return $this->base;
+
     }
 
     /**
@@ -34,7 +38,7 @@ class Square extends Figure
     public function height()
     {
         parent::height();
-        return $this->side;
+        return $this->height;
     }
 
     /**
@@ -43,6 +47,7 @@ class Square extends Figure
     public function output()
     {
         parent::output();
-        return [Figure::SQUARE => $this->side * $this->side];
+        return [Figure::TRIANGULE => $this->base * $this->height / 2];
     }
+
 }

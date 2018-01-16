@@ -1,8 +1,8 @@
 <?php
 
-namespace Figures;
+namespace jfernancordova\Figures\Figures;
 
-use Functions\Functions;
+use jfernancordova\Figures\Functions\Functions;
 
 /**
  * Class Figure

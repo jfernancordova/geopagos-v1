@@ -1,6 +1,6 @@
 <?php
 
-namespace Figures;
+namespace jfernancordova\Figures\Figures;
 
 /**
  * Class Circle

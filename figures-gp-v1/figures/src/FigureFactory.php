@@ -1,10 +1,12 @@
-<?php require_once("Autoloader.php");
+<?php 
 
-use Figures\Triangle;
-use Figures\Circle;
-use Figures\Square;
-use Helpers\ApiResponse;
-use Figures\Figure;
+namespace jfernancordova\Figures;
+
+use jfernancordova\Figures\Figures\Triangle;
+use jfernancordova\Figures\Figures\Circle;
+use jfernancordova\Figures\Figures\Square;
+use jfernancordova\Figures\Helpers\ApiResponse;
+use jfernancordova\Figures\Figures\Figure;
 
 /**
  * Class FigureFactory

@@ -21,4 +21,15 @@ class Favorite extends Model
     protected $fillable = [
         'user_code', 'user_code_favorite'
     ];
+
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    protected $hidden = [
+        'password', 'remember_token','created_at','updated_at'
+    ];
+
+
 }

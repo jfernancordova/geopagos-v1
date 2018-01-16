@@ -22,4 +22,6 @@ class PaymentUser extends Model
         'payment_code', 'user_code'
     ];
 
+
+
 }
